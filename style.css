@@ -1,0 +1,39 @@
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+@import url('https://fonts.googleapis.com/css?family=Khula|Passion+One');
+
+/*general*/
+
+body{
+	height:100%;
+	width:100%;
+	font-family: sans-serif;
+	background-color:black;
+	color:white;
+}
+
+.container {
+	width:100vw;
+	height:100vh;
+	display:table;
+}
+
+/*main*/
+
+.hero {
+	display:table-cell;
+	text-align:center;
+	vertical-align: middle;
+	height:75vh;
+	width:75vw;
+}
+
+h1 {
+	font-family: 'Passion One', cursive;
+	font-size:10vw;
+}
+
+h2 {
+	font-family: 'Khula', sans-serif;
+	font-size:10vh;

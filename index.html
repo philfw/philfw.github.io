@@ -2,79 +2,40 @@
 <html>
 
 	<head>
-		<title>Design Portfolio</title>
-		<meta name="author" content="(c) Phil Weiss 2016"/>
-		<meta name="keywords" content="phil, css, html, javascript">
-		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<title>:Phil Weiss:</title>
+		<meta name="author" content="(c) Phil Weiss 2017"/>
+		<meta name="keywords" content="phil,css,html,javascript,law,code,weiss"/>
+		<link type="text/css" rel="stylesheet" href="reset.css"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
 	</head>
-
 	<body>
-
+		<script src="js/jquery-3.2.1.min.js"></script>
 		<header>
-			
+			<nav class="navbar">
+				<ul>
+					<li><a href="#about"></a></li>
+					<li><a href="#contact"></a></li>
+				</ul>
+			</nav>
 		</header>
-
-		<nav class="navbar">
-			<ul>
-				<li><a href="index.html">ABOUT</a></li>
-				<li><a href="portfolio.html">PORTFOLIO</a></li>
-			</ul>
-		</nav>
-
-		<div>
-
-			<h1>ABOUT ME</h1>
-
-			<p>I'm Phil Weiss, a Developer based in NYC. Check out 
-			<a href="portfolio.html">my portfolio.</a></p>
-
+		<div class="container">
+			<div class="hero">
+				<h1>Phil Weiss</h1>
+				<h2>Lawyer, Coder, <br/> Entrepreneur</h2>
+			</div>
 		</div>
-
-		<div>
-
-			<h2>RESUME</h2>
-
-			<h3>Experience</h3>
-				
-			<p>I am in my second week of a Front-End Web Development 
-			course at 
-			General Assembly where I am learning HTML, CSS, JavaScript, 
-			jQuery 
-			and how to be an awesome Front-End Web Developer! During my 
-			spare time, I enjoy cooking, gaming of all sorts and exploring 
-			New York City.</p>
-		
-			<h3>Relevant Experience</h3>
-		
-			<ul>
-				<li><b>Web Developer, In the Future</b></li>
-				<p>Developed a multi-column layout blog, landing page, and 
-				contact forms that render on mobile devices.</p>
-
-				<li><b>Web Developer, Before the Future</b>
-				</li>
-				<p>Used a design team's wireframes to develop this 
-				company's responsive homepage.</p>
-
-				<li><b>Web Developer, In the Near Future</b></li>
-				<p>Built web app prototype that allows users to store and 
-				quickly retrieve photos using keywords.</p>
-			</ul>
-
+		<div class="container">
+			<div class="hero" id="about">
+				<h1>Phil Weiss</h1>
+				<h2>Lawyer, Coder, <br/> Entrepreneur</h2>
+			</div>
 		</div>
-
-		<div>
-
-			<h2>EDUCATION</h2>
-
-			<ul>
-				<li>General Assembly: FEWD 2016</li>
-				<li>Brooklyn Law School: JD 2012</li>
-				<li>Boston University: BA 2007</li>
-			</ul>
-
+		<div class="container">
+			<div class="hero" id="contact">
+				<h1>Phil Weiss</h1>
+				<h2>Lawyer, Coder, <br/> Entrepreneur</h2>
+			</div>
 		</div>
-
+		<script src="js/main.js"></script>
 	</body>
-
 </html>
