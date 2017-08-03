@@ -11,6 +11,7 @@ body{
 	font-family: sans-serif;
 	background-color:black;
 	color:white;
+	position:relative;
 }
 
 .container {
@@ -19,14 +20,53 @@ body{
 	display:table;
 }
 
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+	font-family: 'Khula', sans-serif;
+	font-weight:900;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/*nav*/
+
+ul {
+	height:35px;
+}
+
+li {
+	font-size:20px;
+	margin:7.5px;
+	width:80px;
+	display:inline-block;
+}
+
 /*main*/
 
 .hero {
 	display:table-cell;
 	text-align:center;
 	vertical-align: middle;
-	height:75vh;
-	width:75vw;
 }
 
 h1 {
@@ -36,4 +76,52 @@ h1 {
 
 h2 {
 	font-family: 'Khula', sans-serif;
-	font-size:10vh;
+	font-size:5vw;
+}
+/*about*/
+
+.about {
+	margin-left:20%;
+	width:60vw;
+	height:100%;
+	font-size:3vw;
+}
+
+.about p {
+	margin-top:30vh;
+	display:inline;
+	width:40vw;
+	margin-bottom:30vh;
+}
+
+p.info {
+	width:4vw;
+	height:4vw;
+	background-image:url("images/i.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-top:40vh;
+}
+
+/*contact*/
+
+div.contact {
+	padding-top:30%;
+}
+
+/*footer*/
+
+footer {
+	position:absolute;
+	bottom:48px;
+	width:100%;
+}
+
+.footer-img {
+	background-image:url('images/github.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:48px;
+	width:48px;
+	margin-left:calc(50% - 24px);
+}
