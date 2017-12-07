@@ -5,7 +5,18 @@
 
 /*general*/
 
-body{
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header {
+	height:60px;
+	width:100vw;
+}
+
+body {
 	height:100%;
 	width:100%;
 	font-family: sans-serif;
@@ -16,7 +27,7 @@ body{
 
 .container {
 	width:100vw;
-	height:100vh;
+	height:calc(100vh - 60px);
 	display:table;
 }
 
@@ -35,10 +46,6 @@ a {
 	font-weight:900;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
 .clearfix::after {
   content: ".";
   display: block;
@@ -51,7 +58,7 @@ a:hover {
 /*nav*/
 
 ul {
-	height:35px;
+	height:auto;
 }
 
 li {
@@ -109,19 +116,30 @@ div.contact {
 	padding-top:30%;
 }
 
-/*footer*/
-
 footer {
 	position:absolute;
 	bottom:48px;
 	width:100%;
 }
 
-.footer-img {
-	background-image:url('images/github.png');
+.img {
 	background-size:cover;
 	background-repeat:no-repeat;
 	height:48px;
 	width:48px;
-	margin-left:calc(50% - 24px);
+	margin:10px;
+}
+
+/*images*/
+
+.github {
+	background-image:url('images/github.png');
+}
+
+.twitter {
+	background-image:url('images/twitter.png');
+}
+
+.lawfirm {
+	background-image:url('images/courthouse.png');
 }
