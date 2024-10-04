@@ -3,29 +3,41 @@
 
 	<head>
 		<title>:Phil Weiss:</title>
-		<meta name="author" content="(c) Phil Weiss 2017"/>
-		<meta name="keywords" content="phil,css,html,javascript,law,code,weiss"/>
+		<meta name="author" content="(c) Phil Weiss 2024"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="reset.css"/>
 		<link type="text/css" rel="stylesheet" href="style.css"/>
-	</head>
+    <script src="index.mjs"></script>
+    </head>
 	<body>
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<header>
-			<nav>
-				<ul class="clearfix">
-					<a href="http://github.com/philfw/philfw.github.io" target="_blank"><div class="github img right"></div></a>
-					<a href="https://ascend.law" target="_blank"><div class="lawfirm img right"></div></a>
-				</ul>
-			</nav>
-		</header>
+      <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader"></div>
+      <p>Fixing this up for you...</p>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <a href="http://github.com/philfw/philfw.github.io" target="_blank"><div class="github img right"></div></a>
+          <a href="https://ascend.law" target="_blank"><div class="lawfirm img right"></div></a>
+        </ul>
+      </nav>
+    </header>
 		<div class="container">
-			<div class="hero">
+      <div id="hero">
 				<h1>Phil Weiss</h1>
 				<h2>Lawyer, Coder, <br/> Entrepreneur</h2>
 			</div>
 		</div>
-		<footer>
+    <div id="ai-prompt" class="hidden">
+      <h3>What, you don't like? <br/> Fine, tell me how it should look:</h3>
+      <p>Add design instructions here:</p>
+      <textarea id="ai-input"></textarea>
+      <button id="submit-button">Let's see what you got.</a>
+      <button id="exit">Take me back...</a>
+    </div>
+		<footer id="footer">
+            <div class>This is plain.</div>
+            <button id="launch-ai">Make it Prettier</button>
 		</footer>
 	</body>
 </html>

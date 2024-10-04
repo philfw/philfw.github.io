@@ -1,3 +1,4 @@
 # philfw.github.io
 
-Source code for my personal webpage. Feel free to reach out with questions or requests!
+LinkedIn: https://www.linkedin.com/in/phil-weiss-64a9293a/
+Ascend Law: https://ascend.law/

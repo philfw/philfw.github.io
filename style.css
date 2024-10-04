@@ -3,32 +3,30 @@
 @import url('https://fonts.googleapis.com/css?family=Passion+One');
 @import url('https://fonts.googleapis.com/css?family=Khula|Passion+One');
 
+/* clear */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*general*/
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+body {
+	height:100vh;
+	width:100%;
+	font-family: sans-serif;
+	background-color:black;
+	color:white;
+	margin:0;
+	padding:0;
 }
 
 header {
 	height:60px;
 	width:100vw;
-}
-
-body {
-	height:100%;
-	width:100%;
-	font-family: sans-serif;
-	background-color:black;
-	color:white;
-	position:relative;
-}
-
-.container {
-	width:100vw;
-	height:calc(100vh - 60px);
-	display:table;
+	margin:0;
 }
 
 .left {
@@ -55,6 +53,10 @@ a {
   height: 0;
 }
 
+.hidden {
+	display:none;
+}
+
 /*nav*/
 
 ul {
@@ -68,9 +70,24 @@ li {
 	display:inline-block;
 }
 
+.img {
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:48px;
+	width:48px;
+	margin:10px;
+}
+
 /*main*/
 
-.hero {
+.container {
+	width:100vw;
+	height:calc(100vh-108px);
+	display:table;
+	padding-top:10%;
+}
+
+#hero {
 	display:table-cell;
 	text-align:center;
 	vertical-align: middle;
@@ -83,51 +100,30 @@ h1 {
 
 h2 {
 	font-family: 'Khula', sans-serif;
-	font-size:5vw;
-}
-/*about*/
-
-.about {
-	margin-left:20%;
-	width:60vw;
-	height:100%;
-	font-size:3vw;
+	font-size:4vw;
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
 }
 
-.about p {
-	margin-top:30vh;
-	display:inline;
-	width:40vw;
-	margin-bottom:30vh;
+h3 {
+	font-family: 'Khula', sans-serif;
+	font-size:3.5vw;
+	text-align: center;
+	width: 80%;
 }
 
-p.info {
-	width:4vw;
-	height:4vw;
-	background-image:url("images/i.png");
-	background-size:cover;
-	background-repeat:no-repeat;
-	margin-top:40vh;
-}
-
-/*contact*/
-
-div.contact {
-	padding-top:30%;
-}
+/*footer*/
 
 footer {
 	position:absolute;
-	bottom:48px;
+	bottom:0px;
 	width:100%;
+	padding:10px;
 }
 
-.img {
-	background-size:cover;
-	background-repeat:no-repeat;
-	height:48px;
-	width:48px;
-	margin:10px;
+#launch-ai {
+	cursor: pointer;
 }
 
 /*images*/
@@ -139,3 +135,57 @@ footer {
 .lawfirm {
 	background-image:url('images/courthouse.png');
 }
+
+/* popup */
+
+div#ai-prompt {
+	box-sizing: border-box;
+	padding:10px;
+	margin-left:10%;
+}
+
+div#ai-prompt textarea {
+	margin:0;
+	min-height: 100px;
+	height:80%;
+	width:80%;
+	padding:10px;
+}
+
+#ai-prompt button {
+	display:block;
+	cursor:pointer;
+}
+
+/* Loading screen styles */
+#loading-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.75); /* Dark background with transparency */
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999; /* Ensure it's on top */
+	display: none; /* Initially hidden */
+  }
+  
+  /* Simple loading animation (CSS spinner) */
+  .loader {
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 80px;
+	height: 80px;
+	animation: spin 2s linear infinite;
+  }
+  
+  /* Keyframes for the spinning loader */
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
