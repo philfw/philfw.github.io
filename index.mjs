@@ -57,7 +57,9 @@ window.onload = (event) => {
 
   submitButton.addEventListener('click', (event) => {
     var userInput = document.getElementById('ai-input').value;
-    sendReq(userInput);
+    if (userInput == '') {
+      console.log('no text');
+    } else { sendReq(userInput); }
   });
 
 };
