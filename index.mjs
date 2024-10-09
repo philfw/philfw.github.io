@@ -11,7 +11,7 @@ window.onload = (event) => {
 // functions
 
   async function sendReq(data) {
-    const url = 'http://localhost:3000/'
+    const url = 'https://frozen-ocean-83864-71f9b9ab7937.herokuapp.com/'
     const loadingScreen = document.getElementById('loading-screen');
   
     // Show the loading screen before the request
